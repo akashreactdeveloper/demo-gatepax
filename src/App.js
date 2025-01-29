@@ -19,6 +19,7 @@ import Subscriptions from './Pages/Subscriptions/Subscriptions';
 import SubscribeDetails from './Pages/Subscriptions/SubscribeDetails';
 import ContactSales from './Pages/ContactSales/ContactSales';
 import ManageIntegration from './Pages/Integrations/ManageIntegration';
+import Performance from './Pages/performance/Performance';
 
 function App() {
   const location = useLocation();
@@ -47,6 +48,7 @@ function App() {
             <Route exact path="/accounts/update/:id" element={<CreateAccount />} />
             <Route exact path="/knowledgeConfiguration/create" element={<CreateKnowledge />} />
             <Route exact path="/integrations/add" element={<AddIntegration />} />
+            <Route exact path="/performance" element={<Performance />} />
 
             <Route exact path="/subscriptions/detail" element={<SubscribeDetails /> } />
             <Route exact path="/form" element={<Form />} />
